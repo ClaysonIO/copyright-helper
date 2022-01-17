@@ -4,17 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "run": "node index.js"
+    "start": "node index.js"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "PRIVATE",
   "dependencies": {
     "@vercel/ncc": "^0.33.1",
     "boxen": "^6.2.1",
     "chalk": "^5.0.0",
     "ignore": "^5.2.0",
-    "nexe": "^4.0.0-beta.19"
+    "nexe": "^4.0.0-beta.19",
+    "yargs": "^17.3.1"
   }
 }

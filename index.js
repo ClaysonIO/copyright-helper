@@ -6,10 +6,13 @@ const ignore = require("ignore");
 const rootDirectory = "D:\\GitHub\\copyright-test";
 const joinedFilePath = "D:\\GitHub\\copyright-helper\\joinedFile.txt";
 let copyrightEndStatement = "END OF COPYRIGHT NOTICE"
+
+
+//These are the types of files to which a copyright notice will be added, along with the start and end symbols for comments
 const supportedFileTypes = {
-  ".js": ["//"],
-  ".ts": ["//"],
-  ".txt": ["#"],
+  ".js": ["//", ""],
+  ".ts": ["//", ""],
+  ".txt": ["#", ""],
   ".html": ["<!--", "-->"]
 }
 
@@ -109,7 +112,7 @@ function prependCopyrightNotice(text, copyrightNotice, copyrightEndStatement, fi
   const commentSymbol = supportedFileTypes[fileType] || ["", ""];
 
   const commentedCopyrightNotice = copyrightNotice
-    .split('\n')
+    .split('\r\n')
     .concat(copyrightEndStatement)
     .map(line=>`${commentSymbol[0] || ""} ${line} ${commentSymbol[1] || ""}`.trim())
     .join('\r\n')
