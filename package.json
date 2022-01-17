@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "compile": "ncc build index.js && cd dist && nexe index.js -o ../copyright-helper.exe"
   },
   "keywords": [],
   "author": "",
@@ -12,9 +13,10 @@
   "dependencies": {
     "@vercel/ncc": "^0.33.1",
     "boxen": "^6.2.1",
-    "chalk": "^5.0.0",
+    "chalk": "^4.1.2",
     "ignore": "^5.2.0",
-    "nexe": "^4.0.0-beta.19",
+    "nexe": "^3.3.3",
+    "prompt-sync": "^4.2.0",
     "yargs": "^17.3.1"
   }
 }
