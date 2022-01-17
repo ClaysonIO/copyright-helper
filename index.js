@@ -14,6 +14,9 @@ const prompt = require('prompt-sync')({
 const supportedFileTypes = {
   ".js": ["//", ""],
   ".ts": ["//", ""],
+  ".tsx": ["//", ""],
+  ".jsx": ["//", ""],
+  ".css": ["/*", "*/"],
   ".txt": ["#", ""],
   ".html": ["<!--", "-->"]
 }
