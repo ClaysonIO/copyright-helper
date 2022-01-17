@@ -1,0 +1,30 @@
+
+
+D:\GitHub\copyright-test\index.js
+
+const variable = "blah"
+const second = "let";
+let third = "bleh";
+
+D:\GitHub\copyright-test\public\index.html
+
+<html>
+<head>
+
+</head>
+<body>
+
+</body>
+</html>
+
+D:\GitHub\copyright-test\src\second test file.ts
+
+const variable = "blah"
+const second = "let";
+let third = "bleh";
+
+D:\GitHub\copyright-test\src\third_test_file.js
+
+const variable = "blah"
+const second = "let";
+let third = "bleh";
